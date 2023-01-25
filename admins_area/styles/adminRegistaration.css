@@ -1,0 +1,123 @@
+*{box-sizing: border-box;}
+form{margin: 0 10%;}
+input[type=text], input[type=email], input[type=number], input[type=select], input[type=date],input[type=select],input[type=password], input[type=tel]
+{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 16px;
+   }
+textarea{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=radio],input[type=checkbox]{
+    width: 4%;
+    padding-left: 0%;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 13px;
+}
+h1{
+    font-family: Arial;
+    font-size: medium;
+    font-style: normal;
+    font-weight: bold;
+    color: #7f0f0f;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    word-spacing: 3.6px
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: slategrey;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin: 10px 0 0 27%;
+    border-radius: 4px;
+    cursor: pointer;
+    float:left;
+}
+input[type=submit]:hover {
+background-color: #32a336;
+}
+.container{
+    border-radius: 5px;
+    background-color:#f2f2f2;    
+    padding: 20px 0 20px 10%;
+    box-shadow: 0 0 5px #123;
+}
+.col-10{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    text-align: end;
+}
+.col-90{
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    body{width: 100%;}
+    .container{
+        width: 100%; 
+        margin: 0 auto;
+     }
+    .col-10{ 
+         width: 100%;
+        margin-top: 0;
+        text-align: center;}
+    .col-90{
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=submit]{
+        width: 26%;
+    margin: 15px 0 15px 36%;}
+
+    input[type=radio],input[type=checkbox]{
+    width: 4%;
+    margin: 0 auto;}
+    form{
+        text-align: center;
+        margin: 0 auto;}    
+}
+
+
+
+
+/**********
+ * 
+ ** . box-sizing: border-box; – It is a CSS property, which sets the calculated
+       value of total width and height of a form.
+** .container – This container class is used for stored all the objects in memory.
+** .col-10, .col-90 -Here we divided the screen into two parts from 100% of the 
+   total responsive grid view. One is col-10, which takes 10% of the total screen. 
+   It includes all the labels like First Name, Last Name, Email, Mobile, etc.) Similarly,
+   col-90, which takes 90% of the total screen. It includes all the fields like text field,
+   text area, number field, password field, date field, etc.
+** .@media – It is a CSS query used for adopting all the screen resolution 
+    (such as a mobile, tablet, desktop, laptop, etc.)
+
+
+
+*/
