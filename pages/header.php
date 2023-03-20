@@ -3,8 +3,7 @@
   include_once("./functions/indexFunction.php"); 
 
   ?>
-<link rel="stylesheet" href="./styles/mainstyle.css">
-<!-- <link rel="stylesheet" href="../styles/contact_us.css"> -->
+
 <style>
   header{
     position: sticky;
@@ -14,14 +13,18 @@
     opacity: 1;
     background-color: #f7f7f7;
   }
-  @media screen and (max-width: 60em){header{height: 5.5rem}}
+  @media screen and (max-width: 60em){header{height: 8rem}}
 </style>
   <header >
 
       <div class="headerNav">
+
         <div class="header-top">
+
           <div class="container">
+
             <ul class="header-social-container">
+
               <li>
                 <a href="#" class="social-link">
                   <i class="fa-brands fa-facebook" name="logo-facebook"></i>
@@ -59,27 +62,44 @@
                 }
               ?>
              
-            </div>          
+            </div>
 
-            <div class="header-top-actions">   
-            </div>             
+           
+
+            <div class="header-top-actions">    
+
+            </div>
+
+             
           </div>
+
         </div>
+
         <div class="header-nav-container">
+
           <div class="header-main">
+
             <div class="container">
+
               <a href="index.php" class="header-logo">
                  <img src=".\images\fuully1.PNG" alt="Sutworld's logo" width="150" height="40"> 
               </a>
-              <div class="header-search-container" id="search_box">                
+
+              <div class="header-search-container" id="search_box">
+                
                 <form action="searchResults.php" method="GET" enctype="multipart/form-data">
+
                   <input type="text" name="user_query" class="search-field" placeholder="Search...">
                   <button class="search-btn">              
                       <input type="submit" name="search" value="Search" style="color: #454545; font-size:17px">
                   </button>
+
                 </form>
+
               </div>
-              <div class="header-user-actions">             
+
+              <div class="header-user-actions">
+             
                 <div class="userlogout">
                    <span class="logoutt" style="padding: 3px;">
                     <?php 
@@ -92,8 +112,12 @@
                     }
                     ?>
                   </span>
+               
+
                 </div>
+
                 <div class="userOutline">
+
                     <button class="action-btn"> 
                       <a href="./customers/myAccount.php">           
                         <i class="fa-solid fa-user" name="person-outline"></i>
@@ -103,22 +127,34 @@
                 </div>
                 
                 <div class="shoppingcart">
+
                     <button class="action-btn">
+
                       <a href="cart.php">
                         <i id="cart-btn" class="fa-sharp fa-solid fa-bag-shopping" name="bag-handle-outline"></i>
-                      </a>                      
+                      </a>
+                      
                       <span class="count">
                         <?php   getItems();    ?>                  
                       </span>
-                    </button>                   
-                </div>  
+
+                    </button>
+                   
+                </div>   
+               
+
               </div>
+
             </div>
+
           </div>
-        
+
           <nav class="desktop-navigation-menu">
+
             <div class="container">
+
               <ul class="desktop-menu-category-list">
+
                 <li class="menu-category">
                   <a  href="index.php" class="menu-title">Home</a>
                 </li>
@@ -127,6 +163,7 @@
                   <a href="#clothCategory.php" class="menu-title">Categories</a>
                 </li>
                   <div class="dropdown-panel">
+
                     <ul class="dropdown-panel-list">
 
                       <li class="menu-title">
@@ -164,7 +201,7 @@
             </div>
 
           </nav>
-      </div>
+        </div>    
 
       </div>
 
@@ -180,19 +217,20 @@
 </header>
 
     <!-- header ends here -->
-<style>
-   .search-btn > input[type="submit"] {
-    display: block;
-    width: 100%;
-    font: inherit;
-    border: none;
-    background: none;
-    }
-  .search-btn > input[type="submit"]:hover { color: var(--salmon-pink); }
-  .checkout{display: none; }
 
-  .menu-category:hover {
-    display: inline-blockmin;
-    visibility: visible;
-  }
-</style>
+    <style>
+      .search-btn > input[type="submit"] {
+        display: block;
+        width: 100%;
+        font: inherit;
+        border: none;
+          background: none;
+      }
+      .search-btn > input[type="submit"]:hover { color: var(--salmon-pink); }
+
+      .checkout{
+        display: none;
+      }
+
+
+    </style>
